@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Muslims in Law at UTM</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MLUTM</a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" id="navbarNav"
+                aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h2 class="drawer-title" id="navbarNavLabel">Menu</h2>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                aria-current="page"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <!-- Contact page -->
+    <main class="container mt-5">
+        <h1>Contact MLUTM</h1>
+        <p>
+            Interested in learning more about Muslims in Law
+            at UTM? Send us a message using the form below.
+        </p>
+
+        <!-- Contact form -->
+        <form class="mx-auto mt-5">
+
+            <div class="row g-4">
+
+                <!-- First name -->
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="firstName" class="form-label">
+                            First Name
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="firstName"
+                            name="firstName"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Last name -->
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="lastName" class="form-label">
+                            Last Name
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="lastName"
+                            name="lastName"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+                        <input type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Reason for contacting -->
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label for="contactReason" class="form-label">
+                            Reason for Contact
+                        </label>
+                        <select class="form-control"
+                            id="contactReason"
+                            name="contactReason"
+                            required>
+                            <option value="">Choose an option</option>
+                            <option value="events">
+                                Events and Workshops
+                            </option>
+                            <option value="membership">
+                                Club Membership
+                            </option>
+                            <option value="networking">
+                                Networking Opportunities
+                            </option>
+                            <option value="other">
+                                Other Questions
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                    <div class="form-field">
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+                        <textarea class="form-control"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <!-- Consent checkbox -->
+                <div class="col-12">
+                    <div class="form-field">
+                        <input type="checkbox"
+                            class="check"
+                            id="consent"
+                            name="consent"
+                            required>
+                        <label for="consent">
+                            I agree to be contacted about my message.
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="submit"
+                class="btn-solid theme-primary mt-5">
+                Send Message
+            </button>
+
+        </form>
+    </main>
+
+    <footer class="container mt-5">
+        <p>&copy; 2026 Muslims in Law at UTM</p>
+    </footer>
+
+</body>
+</html>
