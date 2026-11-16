@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Muslims in Law at UTM</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MLUTM</a>
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" id="navbarNav"
+                aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h2 class="drawer-title" id="navbarNavLabel">Menu</h2>
+                    <button class="btn-close" type="button"
+                        data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+
+        <!-- Introduction -->
+        <section id="about">
+            <h1>Muslims in Law at UTM</h1>
+            <p>Opportunity. Purpose. Possibility.</p>
+            
+            <h2>About Us</h2>
+            <p>Welcome to Muslims in Law at UTM! We are a student club
+                focused on building community, exploring opportunities
+                in law, and connecting students with shared interests.</p>
+        </section>
+
+        <!-- Carousel -->
+        <section class="mt-5">
+            <h2>Life at MLUTM</h2>
+            <p>Take a look at some of our events and activities.</p>
+
+            <div id="clubCarousel" class="carousel carousel-overlay">
+                <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active">
+                        <img src="images/voices-in-law.jpg" class="d-block w-100"
+                            alt="Muslim Voices in Law promotional graphic">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/lsat-workshop.jpg" class="d-block w-100"
+                            alt="Black legal gown hanging on a wooden door">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/campus-tabling.jpg" class="d-block w-100"
+                            alt="MLUTM campus display with club posters and stickers">
+                    </div>
+                </div>
+
+                <div class="carousel-overlay-controls">
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                        type="button" data-bs-target="#clubCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                        type="button" data-bs-target="#clubCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Six cards -->
+        <section class="mt-5">
+            <h2>Explore MLUTM</h2>
+            <p>Learn more about our events, workshops, and campus community.</p>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/voices-in-law.jpg" class="w-100"
+                            alt="Muslim Voices in Law event graphic">
+                        <div class="card-body">
+                            <h3 class="card-title">Muslim Voices in Law</h3>
+                            <p>Connecting students through conversations about law.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    Our networking event brings students together
+                                    to explore different experiences in law.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog1">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog1"
+                        aria-labelledby="dialogTitle1">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle1">Muslim Voices in Law</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            A space for students to connect and hear
+                            different perspectives on the legal field.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/lsat-workshop.jpg" class="w-100"
+                            alt="Black legal gown on a wooden door">
+                        <div class="card-body">
+                            <h3 class="card-title">LSAT Practice Workshop</h3>
+                            <p>Helping students prepare for their law school journey.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    This workshop focuses on LSAT practice
+                                    and learning more about the test.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog2">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog2"
+                        aria-labelledby="dialogTitle2">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle2">LSAT Practice Workshop</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            Students can practise LSAT questions and
+                            become more familiar with the exam.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/campus-tabling.jpg" class="w-100"
+                            alt="MLUTM information table with a poster and stickers">
+                        <div class="card-body">
+                            <h3 class="card-title">Campus Tabling</h3>
+                            <p>Meeting students and introducing our club on campus.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    Our tabling activities help students
+                                    discover MLUTM and its opportunities.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog3">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog3"
+                        aria-labelledby="dialogTitle3">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle3">Campus Tabling</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            Visit our campus table to learn about
+                            our club and connect with our team.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/panelists.jpg" class="w-100"
+                            alt="Muslim Voices in Law promotional design">
+                        <div class="card-body">
+                            <h3 class="card-title">Networking Opportunities</h3>
+                            <p>Creating connections with others interested in law.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    We hope to make networking feel more
+                                    approachable for students.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog4">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog4"
+                        aria-labelledby="dialogTitle4">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle4">Networking Opportunities</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            MLUTM encourages students to build connections
+                            and explore possible paths in law.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/exploring-law.jpg" class="w-100"
+                            alt="Legal gown representing the path to law school">
+                        <div class="card-body">
+                            <h3 class="card-title">Law School Preparation</h3>
+                            <p>Exploring what students can do before applying.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    Learning about admissions and preparation
+                                    can help students plan their next steps.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog5">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog5"
+                        aria-labelledby="dialogTitle5">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle5">Law School Preparation</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            We want students to feel more informed
+                            about preparing for a future in law.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 md:col-6 lg:col-4">
+                    <div class="card h-100">
+                        <img src="images/welcome-mlutm.jpg" class="w-100"
+                            alt="Muslims in Law at UTM club display on campus">
+                        <div class="card-body">
+                            <h3 class="card-title">Our Campus Community</h3>
+                            <p>Bringing together students with shared interests.</p>
+                            <details class="accordion-item">
+                                <summary class="accordion-header">Details</summary>
+                                <div class="accordion-body">
+                                    MLUTM is a place to meet people, ask
+                                    questions, and feel part of a community.
+                                </div>
+                            </details>
+                            <button class="btn-solid theme-primary mt-4"
+                                type="button" data-bs-toggle="dialog"
+                                data-bs-target="#eventDialog6">Learn More</button>
+                        </div>
+                    </div>
+                    <dialog class="dialog" id="eventDialog6"
+                        aria-labelledby="dialogTitle6">
+                        <div class="dialog-header">
+                            <h2 id="dialogTitle6">Our Campus Community</h2>
+                            <button class="btn-close" type="button"
+                                data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            Our club brings students together through
+                            events, conversations, and campus activities.
+                        </div>
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mt-5">
+        <p>&copy; 2026 Muslims in Law at UTM</p>
+    </footer>
+
+</body>
+</html>
